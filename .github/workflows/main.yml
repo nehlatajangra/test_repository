@@ -9,7 +9,6 @@ on:
 jobs:
   create_job_on_ubuntu:
       runs-on: ubuntu-latest
-  
       steps:
         - uses: actions/checkout@v3
 
