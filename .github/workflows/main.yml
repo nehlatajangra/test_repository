@@ -28,7 +28,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-    create_job2:
+  create_job2:
 
     runs-on: windows-latest
 
