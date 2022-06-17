@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: python demo.py
+        run: hlo world
 
 
       - name: Run a multi-line script
@@ -39,6 +39,23 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello, world!
+
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+  python_job:
+
+    runs-on: windows-latest
+
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: python demo.py
 
 
       - name: Run a multi-line script
