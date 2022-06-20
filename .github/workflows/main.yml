@@ -53,9 +53,9 @@ on:
     steps:
 
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+      # - uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.x'
 
       - name: Run a one-line script
         run: echo 'hoiiii'
