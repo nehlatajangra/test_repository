@@ -58,7 +58,7 @@ jobs:
         python-version: '3.x'
 
       - name: Run a one-line script
-        run: python demo.py
+        run: python ./script/demo.py
 
 
       - name: Run a multi-line script
