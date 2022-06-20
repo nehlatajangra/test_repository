@@ -11,40 +11,40 @@ on:
 
 jobs:
 
-  # create_job:
+  create_job:
 
-  #   runs-on: ubuntu-latest
-
-
-  #   steps:
-
-  #     - uses: actions/checkout@v3
-
-  #     - name: Run a one-line script
-  #       run: echo hlo world
+    runs-on: ubuntu-latest
 
 
-  #     - name: Run a multi-line script
-  #       run: |
-  #         echo Add other actions to build,
-  #         echo test, and deploy your project.
-  # create_job2:
+    steps:
 
-  #   runs-on: windows-latest
+      - uses: actions/checkout@v3
 
-
-  #   steps:
-
-  #     - uses: actions/checkout@v3
-
-  #     - name: Run a one-line script
-  #       run: echo Hello, world!
+      - name: Run a one-line script
+        run: echo hlo world
 
 
-  #     - name: Run a multi-line script
-  #       run: |
-  #         echo Add other actions to build,
-  #         echo test, and deploy your project.
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+  create_job2:
+
+    runs-on: windows-latest
+
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
   python_job:
 
     runs-on: ubuntu-latest
