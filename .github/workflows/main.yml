@@ -45,24 +45,24 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  # python_job:
+  python_job:
 
-  #   runs-on: windows-latest
-
-
-  #   steps:
-
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-python@v4
-  #       with:
-  #       python-version: '3.x'
-
-  #     - name: Run a one-line script
-  #       run: python ./script/demo.py
+    runs-on: windows-latest
 
 
-  #     - name: Run a multi-line script
-  #       run: |
-  #         echo Add other actions to build,
-  #         echo test, and deploy your project.
+    steps:
+
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+        python-version: '3.x'
+
+      - name: Run a one-line script
+        run: python ./script/demo.py
+
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
   
