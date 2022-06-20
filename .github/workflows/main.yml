@@ -59,6 +59,8 @@ jobs:
 
       - name: Run a one-line script
         run: python ./script/demo.py
+        working-directory: ./script
+
 
 
       - name: Run a multi-line script
