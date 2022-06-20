@@ -9,9 +9,43 @@ on:
   workflow_dispatch:
 
 
-jobs:
+# jobs:
 
-  create_job:
+#   create_job:
+
+#     runs-on: ubuntu-latest
+
+
+#     steps:
+
+#       - uses: actions/checkout@v3
+
+#       - name: Run a one-line script
+#         run: echo hlo world
+
+
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.
+#   create_job2:
+
+#     runs-on: windows-latest
+
+
+#     steps:
+
+#       - uses: actions/checkout@v3
+
+#       - name: Run a one-line script
+#         run: echo Hello, world!
+
+
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.
+  python_job:
 
     runs-on: ubuntu-latest
 
@@ -19,52 +53,19 @@ jobs:
     steps:
 
       - uses: actions/checkout@v3
-
-      - name: Run a one-line script
-        run: echo hlo world
-
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-  create_job2:
-
-    runs-on: windows-latest
-
-
-    steps:
-
-      - uses: actions/checkout@v3
-
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-  python_job:
-
-    runs-on: windows-latest
-
-
-    steps:
-
-      - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-        python-version: '3.x'
+          python-version: '3.x'
 
       - name: Run a one-line script
-        run: python ./script/demo.py
-        working-directory: ./script
+        run: echo 'hoiiii'
 
 
 
       - name: Run a multi-line script
         run: |
+          cd script
+          python demo.py
           echo Add other actions to build,
           echo test, and deploy your project.
   
