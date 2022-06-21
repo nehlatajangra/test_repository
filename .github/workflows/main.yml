@@ -8,6 +8,8 @@ on:
 
   workflow_dispatch:
 
+env:
+  file-name: demo.py
 
 jobs:
 
@@ -66,7 +68,7 @@ jobs:
         run: |
           cd demo 
           cd script
-          python demo.py
+          python $file-name
           echo Add other actions to build,
           echo test, and deploy your project.
   
