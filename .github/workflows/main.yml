@@ -64,6 +64,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
+          cd demo 
           cd script
           python demo.py
           echo Add other actions to build,
