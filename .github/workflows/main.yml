@@ -8,7 +8,8 @@ on:
 
   workflow_dispatch:
 
-
+env:
+  Greet:hello
 jobs:
 
   create_job:
@@ -38,7 +39,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo $Greet
 
 
       - name: Run a multi-line script
@@ -58,7 +59,7 @@ jobs:
       #     python-version: '3.x'
 
       - name: Run a one-line script
-        run: echo 'hoiiii'
+        run: echo 'hiiii'
 
 
 
