@@ -8,8 +8,7 @@ on:
 
   workflow_dispatch:
 
-env:
-  greet:Hello
+
 jobs:
 
   create_job:
