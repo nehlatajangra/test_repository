@@ -60,16 +60,16 @@ jobs:
       #     python-version: '3.x'
 
       - name: Run a one-line script
-        run: echo 'hiiii python'
+        run: echo hiiii python
 
 
 
       - name: Run a multi-line script
         run: |
-          # cd ..
-          # cd demo 
-          # cd script
-          # python $file-name
+          cd ..
+          cd demo 
+          cd script
+          python $file-name
           echo Add other actions to build,
           echo test, and deploy your project.
   
