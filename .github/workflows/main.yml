@@ -60,7 +60,7 @@ jobs:
       #     python-version: '3.x'
 
       - name: Run a one-line script
-        run: echo 'hiiii'
+        run: echo 'hiiii python'
 
 
 
