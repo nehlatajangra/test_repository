@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-   msg:${{secrets.SECRET1}}
+   msg: ${{ secrets.SECRET1 }}
 
 jobs:
 
