@@ -28,7 +28,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          ech Add other actions to build,
+          echo Add other actions to build,
           echo test, and deploy your project.
   create_job2:
 
