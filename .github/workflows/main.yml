@@ -13,23 +13,23 @@ on:
 
 jobs:
 
-  # create_job:
+  create_job:
 
-  #   runs-on: ubuntu-latest
-
-
-  #   steps:
-
-  #     - uses: actions/checkout@v3
-
-  #     - name: Run a one-line script
-  #       run: echo hlo world
+    runs-on: ubuntu-latest
 
 
-  #     - name: Run a multi-line script
-  #       run: |
-  #         echo Add other actions to build,
-  #         echo test, and deploy your project.
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: echo hlo world
+
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
   create_job2:
 
     runs-on: self-hosted
@@ -47,29 +47,29 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, 
-  # python_job:
+  python_job:
 
-  #   runs-on: ubuntu-latest
-
-
-  #   steps:
-
-  #     - uses: actions/checkout@v3
-  #     # - uses: actions/setup-python@v4
-  #     #   with:
-  #     #     python-version: '3.x'
-
-  #     - name: Run a one-line script
-  #       run: echo hiiii python
+    runs-on: ubuntu-latest
 
 
+    steps:
 
-  #     - name: Run a multi-line script
-  #       run: |
-  #         cd ..
-  #         cd demo 
-  #         cd script
-  #         python $file-name
-  #         echo Add other actions to build,
-  #         echo test, and deploy your project.
+      - uses: actions/checkout@v3
+      # - uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.x'
+
+      - name: Run a one-line script
+        run: echo hiiii python
+
+
+
+      - name: Run a multi-line script
+        run: |
+          cd ..
+          cd demo 
+          cd script
+          python $file-name
+          echo Add other actions to build,
+          echo test, and deploy your project.
   
