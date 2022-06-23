@@ -28,7 +28,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
+          ech Add other actions to build,
           echo test, and deploy your project.
   create_job2:
 
@@ -48,8 +48,8 @@ jobs:
           echo Add other actions to build,
           echo test, 
   python_job:
-    # if: ${{always()}}
-    # needs: create_job
+    if: ${{always()}}
+    needs: create_job
 
     runs-on: ubuntu-latest
 
