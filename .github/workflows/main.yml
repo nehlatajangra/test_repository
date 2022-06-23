@@ -48,6 +48,7 @@ jobs:
           echo Add other actions to build,
           echo test, 
   python_job:
+    needs: create_job
 
     runs-on: ubuntu-latest
 
