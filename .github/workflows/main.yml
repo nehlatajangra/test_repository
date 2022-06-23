@@ -48,7 +48,7 @@ jobs:
           echo Add other actions to build,
           echo test, 
   python_job:
-    if ${{always()}}
+    if: ${{always()}}
     needs: create_job
 
     runs-on: ubuntu-latest
