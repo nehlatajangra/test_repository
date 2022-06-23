@@ -66,10 +66,10 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          cd ..
-          cd demo 
-          cd script
-          python $file-name
+          # cd ..
+          # cd demo 
+          # cd script
+          # python $file-name
           echo Add other actions to build,
           echo test, and deploy your project.
   
